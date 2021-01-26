@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 20px;
+    padding: 0;
+}
+
+.info {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.info h2{
+    padding-top: 10px;
+}
+
+.info img {
+    width: 260px;
+    border-radius: 50%;
+}
+
+.time-table {
+    margin-bottom: 20px;
+}
+
+table,
+tr,
+td,
+th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+}
+
+th {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.list-friend {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}

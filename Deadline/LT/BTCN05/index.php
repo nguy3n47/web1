@@ -1,0 +1,18 @@
+<?php
+    require_once 'init.php';
+    $title = 'Home';
+?>
+
+<?php include 'header.php'; ?>
+
+<?php if (isset($currentUser)): ?>
+<div class="alert alert-success" role="alert">
+    Hi <?php echo $currentUser['username'].' 👋';  ?>, Welcome back to the website!
+</div>
+<?php else : ?>
+<div class="alert alert-secondary" role="alert">
+    You are not logged in
+</div>
+<?php endif; ?>
+
+<?php include 'footer.php'; ?>

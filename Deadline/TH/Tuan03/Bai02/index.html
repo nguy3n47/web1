@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#FFFFFF" />
+        <title>Chinese Chess</title>
+        <link type="text/css" rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="game">
+            <div id="board" style="width: 594px; height: 660px; max-width: 521px; max-height: 577px; position: relative;">
+                <table style="position: absolute; table-layout: fixed; border-collapse: collapse; border-spacing: 0px; top: 33px; left: 27px;">
+                    <tbody>
+                        <tr>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td class="diagtb" style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td class="diagbt" style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td class="diagbt" style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td class="diagtb" style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="width: 57px; height: 56px;"></td>
+                            <td style="width: 57px; height: 56px;"></td>
+                            <td style="width: 57px; height: 56px;"></td>
+                            <td style="width: 57px; height: 56px;"></td>
+                            <td style="width: 57px; height: 56px;"></td>
+                            <td style="width: 57px; height: 56px;"></td>
+                            <td style="border-right: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td class="diagtb" style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td class="diagbt" style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td class="diagbt" style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td class="diagtb" style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                            <td style="border: 1px solid rgb(0, 0, 0); width: 57px; height: 56px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <img draggable="true" src="./Assets/br.svg" style="position: absolute; width: 55px; height: 55px; top: 6px; left: 0px;" />
+                    <img draggable="true" src="./Assets/bn.svg" style="position: absolute; width: 55px; height: 55px; top: 6px; left: 58.375px;" />
+                    <img draggable="true" src="./Assets/bb.svg" style="position: absolute; width: 55px; height: 55px; top: 6px; left: 116.75px;" />
+                    <img draggable="true" src="./Assets/ba.svg" style="position: absolute; width: 55px; height: 55px; top: 6px; left: 175.125px;" />
+                    <img draggable="true" src="./Assets/bk.svg" style="position: absolute; width: 55px; height: 55px; top: 6px; left: 233.5px;" />
+                    <img draggable="true" src="./Assets/ba.svg" style="position: absolute; width: 55px; height: 55px; top: 6px; left: 291.875px;" />
+                    <img draggable="true" src="./Assets/bb.svg" style="position: absolute; width: 55px; height: 55px; top: 6px; left: 350.25px;" />
+                    <img draggable="true" src="./Assets/bn.svg" style="position: absolute; width: 55px; height: 55px; top: 6px; left: 408.625px;" />
+                    <img draggable="true" src="./Assets/br.svg" style="position: absolute; width: 55px; height: 55px; top: 6px; left: 467px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 62.7778px; left: 0px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 62.7778px; left: 58.375px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 62.7778px; left: 116.75px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 62.7778px; left: 175.125px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 62.7778px; left: 233.5px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 62.7778px; left: 291.875px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 62.7778px; left: 350.25px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 62.7778px; left: 408.625px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 62.7778px; left: 467px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 119.556px; left: 0px;" />
+                    <img draggable="true" src="./Assets/bc.svg" style="position: absolute; width: 55px; height: 55px; top: 119.556px; left: 58.375px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 119.556px; left: 116.75px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 119.556px; left: 175.125px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 119.556px; left: 233.5px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 119.556px; left: 291.875px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 119.556px; left: 350.25px;" />
+                    <img draggable="true" src="./Assets/bc.svg" style="position: absolute; width: 55px; height: 55px; top: 119.556px; left: 408.625px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 119.556px; left: 467px;" />
+                    <img draggable="true" src="./Assets/bp.svg" style="position: absolute; width: 55px; height: 55px; top: 176.333px; left: 0px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 176.333px; left: 58.375px;" />
+                    <img draggable="true" src="./Assets/bp.svg" style="position: absolute; width: 55px; height: 55px; top: 176.333px; left: 116.75px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 176.333px; left: 175.125px;" />
+                    <img draggable="true" src="./Assets/bp.svg" style="position: absolute; width: 55px; height: 55px; top: 176.333px; left: 233.5px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 176.333px; left: 291.875px;" />
+                    <img draggable="true" src="./Assets/bp.svg" style="position: absolute; width: 55px; height: 55px; top: 176.333px; left: 350.25px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 176.333px; left: 408.625px;" />
+                    <img draggable="true" src="./Assets/bp.svg" style="position: absolute; width: 55px; height: 55px; top: 176.333px; left: 467px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 233.111px; left: 0px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 233.111px; left: 58.375px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 233.111px; left: 116.75px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 233.111px; left: 175.125px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 233.111px; left: 233.5px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 233.111px; left: 291.875px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 233.111px; left: 350.25px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 233.111px; left: 408.625px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 233.111px; left: 467px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 289.889px; left: 0px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 289.889px; left: 58.375px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 289.889px; left: 116.75px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 289.889px; left: 175.125px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 289.889px; left: 233.5px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 289.889px; left: 291.875px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 289.889px; left: 350.25px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 289.889px; left: 408.625px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 289.889px; left: 467px;" />
+                    <img draggable="true" src="./Assets/rp.svg" style="position: absolute; width: 55px; height: 55px; top: 346.667px; left: 0px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 346.667px; left: 58.375px;" />
+                    <img draggable="true" src="./Assets/rp.svg" style="position: absolute; width: 55px; height: 55px; top: 346.667px; left: 116.75px; background-image: url('res/oos.svg');" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 346.667px; left: 175.125px;" />
+                    <img draggable="true" src="./Assets/rp.svg" style="position: absolute; width: 55px; height: 55px; top: 346.667px; left: 233.5px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 346.667px; left: 291.875px;" />
+                    <img draggable="true" src="./Assets/rp.svg" style="position: absolute; width: 55px; height: 55px; top: 346.667px; left: 350.25px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 346.667px; left: 408.625px;" />
+                    <img draggable="true" src="./Assets/rp.svg" style="position: absolute; width: 55px; height: 55px; top: 346.667px; left: 467px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 403.444px; left: 0px;" />
+                    <img draggable="true" src="./Assets/rc.svg" style="position: absolute; width: 55px; height: 55px; top: 403.444px; left: 58.375px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 403.444px; left: 116.75px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 403.444px; left: 175.125px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 403.444px; left: 233.5px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 403.444px; left: 291.875px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 403.444px; left: 350.25px;" />
+                    <img draggable="true" src="./Assets/rc.svg" style="position: absolute; width: 55px; height: 55px; top: 403.444px; left: 408.625px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 403.444px; left: 467px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 460.222px; left: 0px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 460.222px; left: 58.375px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 460.222px; left: 116.75px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 460.222px; left: 175.125px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 460.222px; left: 233.5px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 460.222px; left: 291.875px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 460.222px; left: 350.25px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 460.222px; left: 408.625px;" />
+                    <img draggable="true" src="./Assets/oo.gif" style="position: absolute; width: 55px; height: 55px; top: 460.222px; left: 467px;" />
+                    <img draggable="true" src="./Assets/rr.svg" style="position: absolute; width: 55px; height: 55px; top: 517px; left: 0px;" />
+                    <img draggable="true" src="./Assets/rn.svg" style="position: absolute; width: 55px; height: 55px; top: 517px; left: 58.375px;" />
+                    <img draggable="true" src="./Assets/rb.svg" style="position: absolute; width: 55px; height: 55px; top: 517px; left: 116.75px;" />
+                    <img draggable="true" src="./Assets/ra.svg" style="position: absolute; width: 55px; height: 55px; top: 517px; left: 175.125px;" />
+                    <img draggable="true" src="./Assets/rk.svg" style="position: absolute; width: 55px; height: 55px; top: 517px; left: 233.5px;" />
+                    <img draggable="true" src="./Assets/ra.svg" style="position: absolute; width: 55px; height: 55px; top: 517px; left: 291.875px;" />
+                    <img draggable="true" src="./Assets/rb.svg" style="position: absolute; width: 55px; height: 55px; top: 517px; left: 350.25px;" />
+                    <img draggable="true" src="./Assets/rn.svg" style="position: absolute; width: 55px; height: 55px; top: 517px; left: 408.625px;" />
+                    <img draggable="true" src="./Assets/rr.svg" style="position: absolute; width: 55px; height: 55px; top: 517px; left: 467px;" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
